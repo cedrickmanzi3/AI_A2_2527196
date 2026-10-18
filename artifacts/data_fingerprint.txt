@@ -1,0 +1,4 @@
+Student verification code: AI-A2-7196
+Random seed: 7196
+CSV file: AI_A2_2527196.csv
+SHA-256: 17d8e65e064c01c6591942f826f6e88613a1755adfd44e6e97d07f62a0cb1f49

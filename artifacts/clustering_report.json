@@ -1,0 +1,48 @@
+{
+  "verification_code": "AI-A2-7196",
+  "seed": 7196,
+  "train_rows": 208,
+  "test_rows": 53,
+  "tested_k": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "silhouette_scores": {
+    "2": 0.15057446655907597,
+    "3": 0.12504598619882232,
+    "4": 0.1407075943449615,
+    "5": 0.14647143697828902,
+    "6": 0.14781021209609602
+  },
+  "selected_k": 2,
+  "selection_reason": "Highest silhouette score on the training set.",
+  "test_cluster_counts": {
+    "0": 22,
+    "1": 31
+  },
+  "cluster_profiles": {
+    "0": {
+      "farm_count": 104,
+      "mean_rainfall_mm": 995.2574057692308,
+      "mean_temperature_c": 18.993488461538462,
+      "mean_soil_moisture_pct": 49.03329278350515,
+      "mean_fertilizer_kg": 133.86780208333334,
+      "mean_field_size_ha": 1.874783653846154,
+      "season_A_fraction": 0.0,
+      "cooperative_support_fraction": 0.4423076923076923
+    },
+    "1": {
+      "farm_count": 104,
+      "mean_rainfall_mm": 978.4805307692308,
+      "mean_temperature_c": 19.22568846153846,
+      "mean_soil_moisture_pct": 52.15227272727272,
+      "mean_fertilizer_kg": 109.71908039215687,
+      "mean_field_size_ha": 2.1076201923076923,
+      "season_A_fraction": 1.0,
+      "cooperative_support_fraction": 0.5384615384615384
+    }
+  }
+}

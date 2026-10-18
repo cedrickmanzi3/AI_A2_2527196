@@ -1,0 +1,24 @@
+{
+  "verification_code": "AI-A2-7196",
+  "seed": 7196,
+  "test_rows": 53,
+  "metrics": {
+    "mean_baseline": {
+      "mae": 2.1176521861393325,
+      "rmse": 2.6432817531905193,
+      "r2": -0.034859948587281586
+    },
+    "linear_regression": {
+      "mae": 0.8816722673820777,
+      "rmse": 1.1490808582738274,
+      "r2": 0.8044328786066888
+    },
+    "random_forest": {
+      "mae": 1.107492198113209,
+      "rmse": 1.338468913992843,
+      "r2": 0.7346547966077623
+    }
+  },
+  "selected_model": "linear_regression",
+  "selection_reason": "Lowest MAE among the two candidate models on the held-out test set."
+}
