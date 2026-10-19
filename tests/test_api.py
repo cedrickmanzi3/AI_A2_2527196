@@ -57,3 +57,38 @@ def test_invalid_season_is_rejected():
     response = client.post("/predict", json=farm)
 
     assert response.status_code == 422
+
+def test_prediction_rejects_missing_required_field():
+    farm = {
+        "rainfall_mm": 1000,
+        "avg_temp_c": 20,
+        "soil_moisture_pct": 50,
+        "fertilizer_kg": 120,
+        "field_size_ha": 2,
+        "season": "A",
+        # cooperative_support is intentionally missing
+    }
+
+    response = client.post("/predict", json=farm)
+
+    assert response.status_code == 422
+
+
+def test_prediction_accepts_season_b():
+    farm = {
+        "rainfall_mm": 900,
+        "avg_temp_c": 21,
+        "soil_moisture_pct": 55,
+        "fertilizer_kg": 100,
+        "field_size_ha": 1.5,
+        "season": "B",
+        "cooperative_support": 0,
+    }
+
+    response = client.post("/predict", json=farm)
+
+    assert response.status_code == 200
+
+    result = response.json()
+    assert result["verification_code"] == "AI-A2-7196"
+    assert isinstance(result["predicted_yield_tons"], float)
