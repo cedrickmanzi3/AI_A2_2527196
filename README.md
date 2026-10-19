@@ -106,7 +106,7 @@ The API endpoints were also tested successfully during development.
 
 **GitHub repository:** https://github.com/cedrickmanzi3/AI_A2_2527196.git
 
-**Final commit hash:** 2163a03669224e1cb756173353e364ff69efa3af
+**Final commit hash:** d00669d3ea9c896fd7852f852460e6a1bc1431ea
 
 ## 9. Known Limitations
 
